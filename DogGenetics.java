@@ -37,7 +37,7 @@ public class DogGenetics {
         int percentageArray[] = new int[numOfAncestors];
 
         for (int i = 0; i < percentageArray.length;i++){
-            currentPercent= new Random().nextInt(totalLeft+1) ;
+            currentPercent= new Random().nextInt(totalLeft-1)+1 ;
             percentageArray[i] = currentPercent;
             totalLeft -= currentPercent;
         }
