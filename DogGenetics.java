@@ -16,7 +16,7 @@ public class DogGenetics {
         int[] dogPercents = getRandomPercentages(numberOfAncestors);
         
 
-        int randomStartingPosition = new Random().nextInt(4);
+        int randomStartingPosition = new Random().nextInt(dogPercents);
         System.out.printf("Well then, I have this highly reliable report on %s's prestigious background right here.\n\n%s is: \n",dogName,dogName);
 
         //Prints dog types from a random starting position.
