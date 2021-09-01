@@ -21,7 +21,7 @@ public class DogGenetics {
 
         //Prints dog types from a random starting position.
         for(int i =0; i<dogTypes.length;i++){
-            System.out.printf("%d%% %s\n",dogPercents[i],dogTypes[(randomStartingPosition++)%numberOfAncestors]);
+            System.out.printf("%d%% %s\n",dogPercents[i],dogTypes[(randomStartingPosition++)%dogTypes.length]);
         }
         sc.close();
     }
