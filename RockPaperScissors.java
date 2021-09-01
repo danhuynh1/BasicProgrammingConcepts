@@ -18,8 +18,8 @@ public class RockPaperScissors {
         boolean playAgain; 
 
         int rounds = getIntFromUser(sc, "How many rounds would you like to play?");
-
-        //Case where if rounds was outside range (1-10); a message is repeated.
+        
+        //Maximum number of rounds = 10, minimum number of rounds = 1.  If the user asks for something outside this range, the program prints an error message and quits.
         if(rounds<=10 && rounds > 1){
             for (int i = 0 ; i<rounds;i++){
                 System.out.println("Round " + (i+1));
@@ -55,7 +55,6 @@ public class RockPaperScissors {
 
         }else{
             System.out.println("The inputed rounds is out of bounds.");
-
             // playAgain = getYesNoFromUser(sc, "Try again?");
             // if (playAgain) playGame();
             // else System.out.println("Bye!");
@@ -64,12 +63,14 @@ public class RockPaperScissors {
     }
 
     /**
-     * Helper method to compare 1:Rock 2:Paper 3: Scissors, returning an integer to repesent the winning Status
+     * whoWins is a helper method to compare 1:Rock 2:Paper 3:Scissors, returning an integer to represent the winning Status
      * @param userChoice
      * @param opponentChoice
-     * @return 0 : userChoice and opponentChoice are tied, 1 : userChoice > opponentChoice, 2 : opponentChoice> userChoice
+     * @return 
+     * 0 : userChoice and opponentChoice are tied, 
+     * 1 : userChoice > opponentChoice, 
+     * 2 : opponentChoice> userChoice
      */
-
     public static int whoWins(int userChoice,int opponentChoice){
         int result = -1;
 
@@ -165,7 +166,6 @@ public class RockPaperScissors {
      * @return
      */
     public static boolean getYesNoFromUser(Scanner sc,String prompt){
-
         boolean foundResult = false;
         while(!foundResult){
             System.out.printf("%s (Yes/No): ",prompt);   
@@ -174,7 +174,6 @@ public class RockPaperScissors {
             if(sread.equalsIgnoreCase("no")) return false;
             System.out.println("Invalid Choice.");
         }
-
         return false;
     }
 }
