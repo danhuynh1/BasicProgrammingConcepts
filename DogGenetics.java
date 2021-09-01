@@ -10,12 +10,10 @@ public class DogGenetics {
 
         System.out.print("What is your dog's name:");
         dogName = sc.nextLine();
-        System.out.printf("Well then, I have this highly reliable report on %s's prestigious background right here.\n\n",dogName);
-        int[] dogPercents = getRandomPercentages();
-        
-        int randomStartingPosition = new Random().nextInt(4);
 
-        System.out.println(dogName + " is:\n");
+        int[] dogPercents = getRandomPercentages();
+        int randomStartingPosition = new Random().nextInt(4);
+        System.out.printf("Well then, I have this highly reliable report on %s's prestigious background right here.\n\n%s is: \n",dogName,dogName);
 
         //Prints dog types from a random starting position.
         for(int i =0; i<dogTypes.length;i++){
@@ -34,14 +32,12 @@ public class DogGenetics {
         int currentPercent;
         int percentageArray[] = {0,0,0,0,0};
         for (int i = 0; i < percentageArray.length;i++){
-            currentPercent= new Random().nextInt(totalLeft+1) ;
+            currentPercent= new Random().nextInt(totalLeft) ;
             percentageArray[i] = currentPercent;
             totalLeft -= currentPercent;
         }
-
         //Remaining percentage is added to last instance.
         percentageArray[4]+=totalLeft;
-
         return percentageArray;
     }
 }
