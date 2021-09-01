@@ -7,4 +7,3 @@ Assessment: Basic Programming Concepts:
   Healthy Hearts
   Summative Sums
  
- Bonus assignment : FizzBuzzSum.java
