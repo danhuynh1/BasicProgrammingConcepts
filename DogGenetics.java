@@ -2,6 +2,8 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class DogGenetics {
+    /**todo: pull random dogType instead of choosing a random starting dog.
+    */
     static String[] dogTypes = {"St. Bernard","Chihuahua","Dramatic RedNosed Asian Pug","Common Cur","King Doberman","Labrador Retriever", "Airedale Terrier", "Shiba Inu", "West Highland White Terrier", "Boykin Spaniel", "Cardigan Welsh Corgi"};
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
