@@ -20,7 +20,7 @@ public class DogGenetics {
         System.out.printf("Well then, I have this highly reliable report on %s's prestigious background right here.\n\n%s is: \n",dogName,dogName);
 
         //Prints dog types from a random starting position.
-        for(int i =0; i<dogTypes.length;i++){
+        for(int i =0; i<numberOfAncestors;i++){
             System.out.printf("%d%% %s\n",dogPercents[i],dogTypes[(randomStartingPosition++)%dogTypes.length]);
         }
         sc.close();
