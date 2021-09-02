@@ -27,6 +27,9 @@ public class HealthyHearts {
             System.out.printf("%s: ",prompt);
             try {
                 value = Integer.parseInt(sc.nextLine());
+                if (value<1){
+                    throw new NumberFormatException();
+                }
                 break;
  
     
