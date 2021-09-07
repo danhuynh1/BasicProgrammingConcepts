@@ -18,6 +18,8 @@ public class RockPaperScissors {
     }
     /**
      * Method to initiate a RPS game for rounds loop, and displays a results count 
+     * @param rounds; int(1-10) indicating how many games of RPS are to be played
+     * @param sc; scanner input to read user input (userChoice)
      *  
      **/
     public static void playGame(int rounds, Scanner sc){
